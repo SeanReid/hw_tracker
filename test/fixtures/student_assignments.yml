@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  assignment_id: 
+  student_id: 
+  on_time: MyString
+  grade: MyString
+  github_url: MyString
+
+two:
+  assignment_id: 
+  student_id: 
+  on_time: MyString
+  grade: MyString
+  github_url: MyString

@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Assignment:</strong>
+  <%= @student_assignment.assignment %>
+</p>
+
+<p>
+  <strong>Student:</strong>
+  <%= @student_assignment.student %>
+</p>
+
+<p>
+  <strong>On time:</strong>
+  <%= @student_assignment.on_time %>
+</p>
+
+<p>
+  <strong>Grade:</strong>
+  <%= @student_assignment.grade %>
+</p>
+
+<p>
+  <strong>Github url:</strong>
+  <%= @student_assignment.github_url %>
+</p>
+
+<%= link_to 'Edit', edit_student_assignment_path(@student_assignment) %> |
+<%= link_to 'Back', student_assignments_path %>
