@@ -2,10 +2,10 @@ Assignment.destroy_all
 Student.destroy_all
 StudentAssignment.destroy_all
 
-day4 = Assignment.create(title: "Concert", description: "Make a concert playlist", assigned: "06/12/14", due: "08:00 06/16/14")
-day9 = Assignment.create(title: "Blackjack", description: "Make a blackjack game", assigned: "06/19/14", due: "08:00 06/23/14")
-day14 = Assignment.create(title: "Ping-Pong", description: "Make a ping-pong scoring game", assigned: "06/26/14", due: "08:00 06/30/14")
-day19 = Assignment.create(title: "HW Tracker", description: "Make a homework tracker", assigned: "07/03/14", due: "23:59 07/07/14")
+day4 = Assignment.create(title: "Concert", description: "Make a concert playlist", assigned: DateTime.strptime("06/12/2014", "%m/%d/%Y"), due: DateTime.strptime("06/16/2014 08:00", "%m/%d/%Y %H:%M"))
+day9 = Assignment.create(title: "Blackjack", description: "Make a blackjack game", assigned: DateTime.strptime("06/19/2014", "%m/%d/%Y"), due: DateTime.strptime("06/23/2014 08:00", "%m/%d/%Y %H:%M"))
+day14 = Assignment.create(title: "Ping-Pong", description: "Make a ping-pong scoring game", assigned: DateTime.strptime("06/26/2014", "%m/%d/%Y"), due: DateTime.strptime("06/30/2014 08:00", "%m/%d/%Y %H:%M"))
+day19 = Assignment.create(title: "HW Tracker", description: "Make a homework tracker", assigned: DateTime.strptime("07/03/2014 08:00", "%m/%d/%Y"), due: DateTime.strptime("07/08/2014 08:00", "%m/%d/%Y %H:%M"))
 
 sean = Student.create name: "Sean Reid"
 adrianne = Student.create name: "Adrianne Miller"
