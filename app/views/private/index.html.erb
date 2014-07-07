@@ -1,0 +1,10 @@
+<h1>private#index</h1>
+
+<% @students.each do |student| %>
+  <h3><%= student.name %></h3>
+  <ul>
+    <% student.assignments.each do |assignment| %>
+      <li><%= assignment.name %></li>
+    <% end %>
+  </ul>
+<% end %>
