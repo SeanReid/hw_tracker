@@ -17,6 +17,9 @@ david = Student.create name: "David Alley"
 alex = Student.create name: "Alex Covarrubias"
 
 sean.turned_in(day4)
+sean.turned_in(day9)
+sean.turned_in(day14)
+sean.turned_in(day19)
 # student_assignment.find_by_student_id_and_assignment_id(1,1).update(:on_time, "YES", :grade, "A", :github_url, "http://github.com/seanreid")
 
 # sean.turned_in(day4, "YES", "A", "http://github.com/seanreid")

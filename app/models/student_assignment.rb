@@ -1,4 +1,4 @@
 class StudentAssignment < ActiveRecord::Base
-  belongs_to :assignments
-  belongs_to :students
+  belongs_to :assignment
+  belongs_to :student
 end
