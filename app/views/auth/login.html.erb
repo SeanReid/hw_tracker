@@ -1,0 +1,14 @@
+<h1>LOGIN</h1>
+
+
+<strong><%= @message %></strong>
+
+<%= form_tag verify_login_path do %>
+  <div>
+    <%= label_tag "Password" %>
+    <%= password_field_tag :password%>
+  </div>
+  <div>
+    <%= submit_tag "ENTER" %>
+  </div>
+<% end %>

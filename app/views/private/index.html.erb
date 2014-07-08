@@ -1,4 +1,4 @@
-<h1><%= @student.name %> STUDENT NAME</h1>
+<h1><%= @student.name %></h1>
 
 <h2>Assignments</h2>
 
@@ -26,9 +26,9 @@
         <% if student_assignment %>
           <td><%= link_to "gigGITy", student_assignment.github_url %></td>
           <td><% if student_assignment.on_time %>
-            <i class="fa fa-check-circle success"></i>
+            <i class="fa fa-smile-o success"></i>
           <% else %>
-            <i class="fa fa-times-circle fail"></i>
+            <i class="fa fa-plus-square fail"></i>
           <% end %></td>
           <td><%= student_assignment.grade %></td>
         <% end %>
