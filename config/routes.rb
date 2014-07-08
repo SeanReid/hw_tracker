@@ -1,9 +1,13 @@
 Rails.application.routes.draw do
+  root to: "private#index"
+
   resources :student_assignments
 
   resources :assignments
 
   resources :students
+
+  resources :private
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

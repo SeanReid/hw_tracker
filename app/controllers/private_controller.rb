@@ -1,5 +1,7 @@
 class PrivateController < ApplicationController
+
   def index
-    @students = Student.all
+    @assignments = Assignment.all
+    @student = Student.first
   end
 end
