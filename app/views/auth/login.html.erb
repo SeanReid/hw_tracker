@@ -5,6 +5,8 @@
 
 <%= form_tag verify_login_path do %>
   <div>
+    <%= label_tag "USER" %>
+    <%= text_field_tag :login %>
     <%= label_tag "Password" %>
     <%= password_field_tag :password%>
   </div>

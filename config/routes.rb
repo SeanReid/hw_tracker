@@ -1,13 +1,15 @@
 Rails.application.routes.draw do
-  get 'auth/login'
+  # get 'auth/login'
   root to: "private#index"
   resources :student_assignments
   resources :assignments
   resources :students
-  resources :private
+  # resources :private
   # post 'assignment' => "assignment#create", as: :assignment
   get "auth/login" => "auth#login", as: "login"
   post "auth/verify" => "auth#verify", as: "verify_login"
+
+  get "private/index" => "private#index", as: "private"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

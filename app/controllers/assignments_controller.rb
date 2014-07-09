@@ -1,8 +1,11 @@
 class AssignmentsController < ApplicationController
+
+
+
   def create
     @student_assignment = StudentAssignment.new(completed_params)
     if @student_assignment.save
-      redirect_to root_path
+      redirect_to private_path
     else
       render :new
     end

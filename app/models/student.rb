@@ -6,6 +6,6 @@ class Student < ActiveRecord::Base
   #   assignments << assignment
   # end
   def completed(assignment)
-    student_assignments.find_by assignment_id: assignment.id
+    student_assignments.where(assignment_id: assignment.id).order("created_at DESC").first
   end
 end

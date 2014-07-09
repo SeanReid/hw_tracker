@@ -4,8 +4,8 @@ class AuthController < ApplicationController
 
   def verify
     if params[:password] == "1"
-      session[:admin] = true
-      redirect_to posts_path
+      session[:student] = params[:login]
+      redirect_to root_path
     else
       @message = "You Shall Not PASSSSSSSS"
       render :login
