@@ -1,7 +1,4 @@
-<h1><%= @student.name %></h1>
-<h1><%= @student.id %></h1>
-
-<h2>Assignments</h2>
+<h1><%= @student.name %>'s Assignments</h1>
 
 <table>
   <thead>
@@ -10,9 +7,9 @@
       <th>Description</th>
       <th>Assigned</th>
       <th>Due Date</th>
-      <th>Url</th>
       <th>On Time</th>
       <th>Grade</th>
+      <th>Url</th>
     </tr>
   </thead>
 
@@ -33,8 +30,8 @@
           <% end %></td>
           <td><%= student_assignment.grade %></td>
         <% else %>
-          <td colspan="3">
-            <%= form_for @student.student_assignments.build, url: :assignments do |f| %>
+          <td colspan="1">
+            <%= form_for @student.student_assignments.build, url: :student_assignments do |f| %>
               <%= f.hidden_field :student_id, value: @student.id %>
               <%= f.hidden_field :assignment_id, value: assignment.id %>
               <%= f.text_field :github_url %>
@@ -49,4 +46,4 @@
 
 <br>
 
-<%= link_to 'New Student assignment', new_student_assignment_path %>
+<!-- <%= link_to 'New Student assignment', new_student_assignment_path %> -->
