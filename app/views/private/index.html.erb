@@ -30,7 +30,7 @@
           <% end %></td>
           <td><%= student_assignment.grade %></td>
         <% else %>
-          <td colspan="1">
+          <td colspan="3">
             <%= form_for @student.student_assignments.build, url: :student_assignments do |f| %>
               <%= f.hidden_field :student_id, value: @student.id %>
               <%= f.hidden_field :assignment_id, value: assignment.id %>
@@ -45,5 +45,4 @@
 </table>
 
 <br>
-
-<!-- <%= link_to 'New Student assignment', new_student_assignment_path %> -->
+<%= link_to 'New Assignment', new_assignment_path %>
